@@ -107,6 +107,7 @@ cdef dict DBTYPES = {
     'float': _mssql.SQLFLT8,
     #Dump type for work vith None
     'NoneType': _mssql.SQLVARCHAR,
+    'bytes': _mssql.SQLBINARY,
 }
 
 cdef int py2db_type(py_type, value):
